@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+html , body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont{
+    max-width: 1200px;
+    margin: 0px auto;
+
+}
+
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 32px;
+    background: white;
+    height: 150px;
+    z-index: 50;
+}
+
+.bar_icon{
+    font-size: 32px;
+}
+
+ .real{
+    height: 130 px;
+    width: 140px;
+}
+
+.part{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.real2{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    
+}
+.part_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag{
+    background-color: rgb(236, 88, 34);
+    padding: 5px 10px;
+    color: white;
+    align-self:flex-start;
+}
+
+.part_content h2{
+    font-size: 47px;
+    line-height: 1.1;
+}
+.explore{
+    background-color: rgb(24, 153, 24);
+    align-self: flex-start;
+    color: white;
+}
+.grid{
+    padding-top: 20px;
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+    vertical-align: middle;
+    align-items: center;
+    grid-template-areas: 
+    "I12 I2 I3 I4"
+    "I5 I11 I7 I1"
+    /* "I13 I10 I11 I12"; */
+    
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+
+.item7{
+    grid-area: I7;
+}
+
+.item11{
+    grid-area: I11;
+}
+.item12{
+    grid-area: I12;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    border: #ccc;
+}
+.footer_cont{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.link_list h3{
+    margin-bottom: 10px;
+    color: rgb(65, 63, 63);
+
+}
+.link_list ul{
+    list-style: none;
+}
+.link_list ul li{
+    font: size 16px;
+    margin: bottom 5px; 
+}
+.new_letter input{
+    margin-bottom: 10px;
+    color:gray ;
+}
+.icon_cont{
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
+}
+
+@media(max-width: 786px){
+    .part{
+        flex-direction: column;
+
+    }
+    .part_img{
+        justify-content: center;
+        display: flex;
+
+    }
+    .part_img img{
+        width: 90%;
+    }
+    .part_content{
+        gap: 10px;
+        padding: 10px;
+        
+
+    }
+    .part_content h2{
+        font-size: 30px;
+
+    }
+    .real2{
+        height: auto;
+        width: auto;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .footer_cont{
+        flex-direction: column;
+    }
+
+}
+.features{
+    margin-top: 90px;
+    display: flex;
+    margin-bottom: 50px;
+    transition: 0.2s ease-in-out;
+    
+}
+.no{
+    height: 50pxx;
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: auto;
+}
+
+.features h2{
+    padding: 10 px;
+    justify-content: flex-end;
+    transition: 0.2s ease-in-out;
+}
+.features:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.divider{
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+.time{
+    
+    /* background-color: rgb(38, 211, 23);
+    align-self: flex-start; */
+    background-color:  rgb(24, 153, 24);
+    padding: 5px 10px;
+    color: white;
+    align-content:center;
+    text-align: center;
+    flex-direction: column;
+    width: fit-content;
+    align-self: center;
+}
+.menu h2{
+    align-self: center;
+    padding-top: 10px;
+    
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gridimage{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+
+}
+.gridimage:hover{
+     transform: scale(1.05);
+     transition: 0.2s ease-in-out;
+
+}
+/* .features{
+    flex-direction: column;
+}
+ */
